@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Receitas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf2;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fffaf2;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .receitas {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .receita-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Site de Receitas</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Bem-vindo ao meu site de receitas 🍰</h1>
+        <p>Receita do dia: bolo de chocolate!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chocolate_cake.jpg" alt="Bolo de chocolate">
+        
+        <h2>Últimas receitas</h2>
+        <div class="receitas">
+            <div class="receita-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Pancakes_with_syrup.jpg" alt="Panquecas">
+                <p>Panquecas</p>
+            </div>
+            <div class="receita-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Salad_platter.jpg" alt="Salada de legumes">
+                <p>Salada de legumes</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
 
