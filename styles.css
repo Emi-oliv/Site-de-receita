@@ -7,34 +7,27 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff9f2; /* fundo clarinho igual ao site da imagem */
+    background-color: #fff9f2;
     color: #222;
 }
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px 40px;
-    background-color: transparent; /* fundo limpo */
 }
 
-header h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
     color: #ff6f61;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Main */
@@ -45,24 +38,18 @@ main {
     text-align: center;
 }
 
-h1 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
 h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: left;
-    color: #222;
+    color: #ff6f61;
 }
 
-/* Imagens */
-main img {
-    max-width: 300px;
+/* Imagens do banner */
+header img {
+    max-width: 550px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin: 20px 0;
 }
 
 /* Receitas grid */
@@ -104,6 +91,8 @@ button {
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
     transition: background 0.3s;
 }
 
@@ -118,22 +107,13 @@ footer {
     background-color: transparent;
     color: #555;
     margin-top: 40px;
+    border-top: 1px solid #eee;
 }
 
 /* Responsivo */
 @media(max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        margin-left: 0;
-        margin-right: 10px;
-    }
-
-    main img {
+    main img, header img {
         max-width: 90%;
     }
 }
+
