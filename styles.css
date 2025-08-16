@@ -61,7 +61,7 @@ h2 {
 main img {
     max-width: 300px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin: 20px 0;
 }
 
@@ -78,13 +78,13 @@ main img {
     border-radius: 15px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .receita-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .receita-card p {
@@ -121,7 +121,7 @@ footer {
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
+@media(max-width: 600px) {
     header {
         flex-direction: column;
         gap: 10px;
@@ -132,6 +132,12 @@ footer {
         margin-left: 0;
         margin-right: 10px;
     }
+
+    main img {
+        max-width: 90%;
+    }
+}
+
 
     main img {
         max-width: 90%;
