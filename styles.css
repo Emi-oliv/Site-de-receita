@@ -3,26 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #fff7f2;
+    background-color: #fffaf0; /* fundo suave */
     color: #333;
     padding: 20px;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ffb3a7;
+    border-bottom: 2px solid #ffd6d6;
 }
 
 header h2 {
     color: #ff6b81;
+    font-size: 28px;
 }
 
 header nav a {
@@ -30,22 +32,53 @@ header nav a {
     text-decoration: none;
     color: #ff6b81;
     font-weight: bold;
+    transition: color 0.2s;
 }
 
 header nav a:hover {
+    color: #ff4757;
     text-decoration: underline;
 }
 
+/* Main */
 main h1 {
+    color: #ff6b81;
+    margin-bottom: 20px;
+}
+
+/* Cookie lado a lado */
+.cookie-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.cookie-section img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cookie-receita {
+    max-width: 400px;
+}
+
+.cookie-receita h2 {
     color: #ff4757;
     margin-bottom: 10px;
 }
 
-main p {
-    margin-bottom: 20px;
-    font-size: 16px;
+.cookie-receita p {
+    line-height: 1.6;
+    font-size: 14px;
 }
 
+.cookie-receita strong {
+    color: #ff6b81;
+}
+
+/* Receitas em cards */
 .receitas {
     display: flex;
     flex-wrap: wrap;
@@ -54,16 +87,17 @@ main p {
 }
 
 .receita-card {
-    background-color: #fff;
+    background-color: #fff1f0;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 300px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .receita-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .receita-card img {
@@ -76,11 +110,16 @@ main p {
 }
 
 .receita-info h3 {
-    color: #ff6b81;
+    color: #ff4757;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .receita-info p {
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 14px;
+}
+
+.receita-info strong {
+    color: #ff6b81;
 }
