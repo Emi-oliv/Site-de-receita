@@ -7,27 +7,34 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff9f2;
+    background-color: #fff9f2; /* fundo clarinho igual ao site da imagem */
     color: #222;
 }
 
 /* Header */
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: transparent; /* fundo limpo */
 }
 
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
     color: #ff6f61;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 /* Main */
@@ -38,18 +45,24 @@ main {
     text-align: center;
 }
 
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
 h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: left;
-    color: #ff6f61;
+    color: #222;
 }
 
-/* Imagens do banner */
-header img {
-    max-width: 550px;
+/* Imagens */
+main img {
+    max-width: 300px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 /* Receitas grid */
@@ -65,13 +78,13 @@ header img {
     border-radius: 15px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .receita-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .receita-card p {
@@ -91,8 +104,6 @@ button {
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    font-size: 0.95rem;
     transition: background 0.3s;
 }
 
@@ -107,12 +118,22 @@ footer {
     background-color: transparent;
     color: #555;
     margin-top: 40px;
-    border-top: 1px solid #eee;
 }
 
 /* Responsivo */
-@media(max-width: 600px) {
-    main img, header img {
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    main img {
         max-width: 90%;
     }
 }
