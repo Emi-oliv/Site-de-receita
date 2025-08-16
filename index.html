@@ -9,12 +9,42 @@
 <body>
     <header>
         <h2>🍴 Site de Receitas</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
-    <main>
-        <h1>Bem-vindo ao nosso site de receitas!</h1>
-        <p>Receita do dia: <strong>Cookie de chocolate 🍪</strong></p>
-        <img width="300" height="250" alt="Cookie de chocolate" src="https://github.com/user-attachments/assets/083cc6b7-71f0-4a6b-b8a5-c082a4d3e73f" />
 
+    <main>
+        <h1>Receita em destaque!</h1>
+
+        <!-- Cookie lado a lado -->
+        <div class="cookie-section">
+            <img width="300" height="250" alt="Cookie de chocolate" src="https://github.com/user-attachments/assets/083cc6b7-71f0-4a6b-b8a5-c082a4d3e73f" />
+            
+            <div class="cookie-receita">
+                <h2>🍪 Cookie de Chocolate</h2>
+                <p>
+                    <strong>Ingredientes:</strong><br>
+                    1 xícara de farinha de trigo<br>
+                    1/2 xícara de açúcar<br>
+                    1/4 xícara de manteiga derretida<br>
+                    1 ovo<br>
+                    50 g de chocolate picado<br><br>
+
+                    <strong>Modo de preparo:</strong><br>
+                    Misture a manteiga com o açúcar e o ovo.<br>
+                    Acrescente a farinha e misture bem.<br>
+                    Adicione o chocolate picado.<br>
+                    Modele bolinhas e coloque em uma assadeira.<br>
+                    Asse em forno pré-aquecido a 180°C por 12-15 minutos.<br>
+                    Sirva morno ou frio.
+                </p>
+            </div>
+        </div>
+
+        <!-- Outras receitas em cards -->
         <div class="receitas">
 
             <!-- Card da Panqueca -->
@@ -40,7 +70,7 @@
 
             <!-- Card da Salada -->
             <div class="receita-card">
-                <img width="300" height="250" alt="Salada de legumes" src="https://github.com/user-attachments/assets/07410514-0c31-43d8-99d1-a72ba243fc25" />
+                <img width="300" height="250" alt="Salada de Frango" src="https://github.com/user-attachments/assets/07410514-0c31-43d8-99d1-a72ba243fc25" />
                 <div class="receita-info">
                     <h3>🥗 Salada de Frango</h3>
                     <p>
@@ -50,7 +80,7 @@
                         1 tomate picado<br>
                         1/2 cenoura ralada<br>
                         Azeite, sal e pimenta a gosto<br>
-                        Opcional: milho e queijo<br><br>
+                        Opcional: milho, queijo ou croutons<br><br>
 
                         <strong>Modo de preparo:</strong><br>
                         Em uma tigela, misture o frango desfiado com as folhas, tomate e cenoura.<br>
